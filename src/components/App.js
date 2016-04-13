@@ -14,7 +14,11 @@ export default class App extends Component {
     return (
         <div>
 
-          <AppBar style={{backgroundColor:'#FFF'}} titleStyle={{color:'#36AFC3'}} title="TODO" iconClassNameRight="muidocs-icon-navigation-expand-more" />
+          <AppBar
+            style={{backgroundColor:'#FFF'}}
+            titleStyle={{color:'#36AFC3'}}
+            title="TODO"
+            iconClassNameRight="muidocs-icon-navigation-expand-more" />
 
         </div>
     );
