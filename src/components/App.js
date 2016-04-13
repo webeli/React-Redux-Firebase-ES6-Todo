@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { AppBar } from 'material-ui';
-import { Footer } from './Footer';
+import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
-import VisibleTodoList from '../containers/visibleTodoList';
+import VisibleTodoList from '../containers/VisibleTodoList';
 
 const App = () => (
     <div>
@@ -12,7 +12,7 @@ const App = () => (
             titleStyle={{color:'#36AFC3'}}
             title="TODO"
             iconClassNameRight="muidocs-icon-navigation-expand-more" />
-        <AddTodo/>
+        <AddTodo />
         <VisibleTodoList />
         <Footer />
 
