@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import { AppBar, List, Divider } from 'material-ui';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { AppBar } from 'material-ui';
+import { Footer } from './Footer';
+import AddTodo from '../containers/AddTodo';
+import VisibleTodoList from '../containers/visibleTodoList';
 
-export default class App extends Component {
+const App = () => (
+    <div>
 
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-
-
-    return (
-        <div>
-
-          <AppBar
+        <AppBar
             style={{backgroundColor:'#FFF'}}
             titleStyle={{color:'#36AFC3'}}
             title="TODO"
             iconClassNameRight="muidocs-icon-navigation-expand-more" />
+        <AddTodo/>
+        <VisibleTodoList />
+        <Footer />
 
-        </div>
-    );
-  }
+    </div>
+)
 
-}
+export default App
